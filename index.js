@@ -9,7 +9,17 @@ function add(numbers) {
     return result;
 }
 
+// 要素の配列を受け取り、全てかけ合わせる
+function multi(numbers) {
+    let result = 1;
+    for (let num of numbers) {
+        result = result * num;
+    }
+    return result;
+}
+
 // npmパッケージにaddメソッドを追加(=関数をモジュール化した)(←module.exportsオブジェクトのプロパティとして関数を登録してる)
 module.exports = {
-    add: add
+    add : add,
+    multi : multi
 };
