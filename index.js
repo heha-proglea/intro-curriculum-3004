@@ -2,19 +2,15 @@
 
 // 整数の配列を受け取り、全て足し合わせる
 function add(numbers) {
-    let result = 0;
-    for (let num of numbers) {
-        result = result + num;
-    }
+    let result;
+    result = numbers.reduce((a, b) => a + b);
     return result;
 }
 
 // 要素の配列を受け取り、全てかけ合わせる
 function multi(numbers) {
-    let result = 1;
-    for (let num of numbers) {
-        result = result * num;
-    }
+    let result;
+    result = numbers.reduce((a, b) => a * b);
     return result;
 }
 
